@@ -23,3 +23,9 @@ Task2Status = Task2Status.toLowerCase();
 //Validation for status input
 let task2Status = prompt("Enter Task 1 status (todo, doing, done):");
 alert("Invalid status! Please enter todo, doing, or done.");
+
+//Put task in a list
+let tasks = [
+  { title: Task1Title, description: Task1Description, status: task1Status },
+  { title: Task2Title, description: Task2Description, status: task2Status }
+];
