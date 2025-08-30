@@ -3,14 +3,16 @@
 //=======Task 1 ========
 let Task1Title = prompt("Enter Task 1 title:");
 let Task1Description =prompt("Enter Task 1 description:");
-let task1Statusstatus =prompt("Enter Task 1 status:");
+let Task1Status =prompt("Enter Task 1 status:");
 
 //Converting status inputs to lowercase
-task1Status = task1Status.toLowerCase();
+Task1Status = Task1Status.toLowerCase();
 
 //Validation for status input
-let task1Status = prompt("Enter Task 1 status (todo, doing, done):");
-alert("Invalid status! Please enter todo, doing, or done.");
+while (Task1Status !== "todo" && task2Status !== "doing" && task2Status !== "done") {
+  alert("Invalid status! Please enter todo, doing, or done."); // tell user it's wrong
+  Task1Status = prompt("Enter Task 1 status again (todo, doing, done):").toLowerCase(); // ask again
+}
 
 //=======Task 2 ========
 let Task2Title = prompt("Enter Task 2 title:");
@@ -21,8 +23,10 @@ let Task2Status =prompt("Enter Task 2 status:");
 Task2Status = Task2Status.toLowerCase();
 
 //Validation for status input
-let task2Status = prompt("Enter Task 1 status (todo, doing, done):");
-alert("Invalid status! Please enter todo, doing, or done.");
+while (Task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done") {
+  alert("Invalid status! Please enter todo, doing, or done."); // tell user it's wrong
+  Task2Status = prompt("Enter Task 2 status again (todo, doing, done):").toLowerCase(); // ask again
+}
 
 //Put task in a list
 let tasks = [
