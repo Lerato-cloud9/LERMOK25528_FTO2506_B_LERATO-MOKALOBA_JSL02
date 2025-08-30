@@ -4,3 +4,6 @@
 let title = prompt("Enter Task 1 title:");
 let description =prompt("Enter Task 1 description:");
 let status =prompt("Enter Task 1 status:");
+
+//Converting status inputs to lowercase
+task2Status = task2Status.toLowerCase();
