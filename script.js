@@ -30,3 +30,18 @@ let tasks = [
   { title: Task2Title, description: Task2Description, status: task2Status }
 ];
 
+// check if there are completed tasks
+
+let completedTasks = tasks.filter(function(task) {
+  return task.status === "done";
+});
+
+// Show results in the console
+if (completedTasks.length > 0) {
+  console.log("Completed Tasks:");
+  completedTasks.forEach(function(task) {
+    console.log("Title: " + task.title + ", Status: " + task.status);
+  });
+} else {
+  console.log("No tasks completed, let's get to work!");
+}
