@@ -10,3 +10,4 @@ task1Status = task1Status.toLowerCase();
 
 //Validation for status input
 let task1Status = prompt("Enter Task 1 status (todo, doing, done):");
+alert("Invalid status! Please enter todo, doing, or done.");
