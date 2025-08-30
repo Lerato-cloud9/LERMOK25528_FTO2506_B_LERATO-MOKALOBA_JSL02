@@ -19,3 +19,7 @@ let Task2Status =prompt("Enter Task 2 status:");
 
 //Converting status inputs to lowercase
 Task2Status = Task2Status.toLowerCase();
+
+//Validation for status input
+let task2Status = prompt("Enter Task 1 status (todo, doing, done):");
+alert("Invalid status! Please enter todo, doing, or done.");
