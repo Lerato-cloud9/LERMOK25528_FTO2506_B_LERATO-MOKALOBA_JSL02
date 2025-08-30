@@ -6,4 +6,7 @@ let description =prompt("Enter Task 1 description:");
 let status =prompt("Enter Task 1 status:");
 
 //Converting status inputs to lowercase
-task2Status = task2Status.toLowerCase();
+task1Status = task1Status.toLowerCase();
+
+//Validation for status input
+let task1Status = prompt("Enter Task 1 status (todo, doing, done):");
