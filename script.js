@@ -1,37 +1,37 @@
 //Prompt user for 2 tasks with (title, description, status)
 
 //=======Task 1 ========
-let Task1Title = prompt("Enter Task 1 title:");
-let Task1Description =prompt("Enter Task 1 description:");
-let Task1Status =prompt("Enter Task 1 status:");
+let task1Title = prompt("Enter Task 1 title:");
+let task1Description =prompt("Enter Task 1 description:");
+let task1Status =prompt("Enter Task 1 status:");
 
 //Converting status inputs to lowercase
-Task1Status = Task1Status.toLowerCase();
+task1Status = task1Status.toLowerCase();
 
 //Validation for status input
-while (Task1Status !== "todo" && Task1Status !== "doing" && Task1Status !== "done") {
+while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "done") {
   alert("Invalid status! Please enter todo, doing, or done."); // tell user it's wrong
-  Task1Status = prompt("Enter Task 1 status again (todo, doing, done):").toLowerCase(); // ask again
+  task1Status = prompt("Enter Task 1 status again (todo, doing, done):").toLowerCase(); // ask again
 }
 
 //=======Task 2 ========
-let Task2Title = prompt("Enter Task 2 title:");
-let Task2Description =prompt("Enter Task 2 description:");
-let Task2Status =prompt("Enter Task 2 status:");
+let task2Title = prompt("Enter Task 2 title:");
+let task2Description =prompt("Enter Task 2 description:");
+let task2Status =prompt("Enter Task 2 status:");
 
 //Converting status inputs to lowercase
-Task2Status = Task2Status.toLowerCase();
+task2Status = task2Status.toLowerCase();
 
 //Validation for status input
-while (Task2Status !== "todo" && Task2Status !== "doing" && Task2Status !== "done") {
+while (task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done") {
   alert("Invalid status! Please enter todo, doing, or done."); // tell user it's wrong
-  Task2Status = prompt("Enter Task 2 status again (todo, doing, done):").toLowerCase(); // ask again
+  task2Status = prompt("Enter Task 2 status again (todo, doing, done):").toLowerCase(); // ask again
 }
 
 //Put task in a list
 let tasks = [
-  { title: Task1Title, description: Task1Description, status: Task1Status },
-  { title: Task2Title, description: Task2Description, status: Task2Status }
+  { title: task1Title, description: task1Description, status: task1Status },
+  { title: task2Title, description: task2Description, status: task2Status }
 ];
 
 // check if there are completed tasks
