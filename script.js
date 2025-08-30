@@ -9,7 +9,7 @@ let Task1Status =prompt("Enter Task 1 status:");
 Task1Status = Task1Status.toLowerCase();
 
 //Validation for status input
-while (Task1Status !== "todo" && task2Status !== "doing" && task2Status !== "done") {
+while (Task1Status !== "todo" && Task2Status !== "doing" && Task2Status !== "done") {
   alert("Invalid status! Please enter todo, doing, or done."); // tell user it's wrong
   Task1Status = prompt("Enter Task 1 status again (todo, doing, done):").toLowerCase(); // ask again
 }
@@ -23,15 +23,15 @@ let Task2Status =prompt("Enter Task 2 status:");
 Task2Status = Task2Status.toLowerCase();
 
 //Validation for status input
-while (Task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done") {
+while (Task2Status !== "todo" && Task2Status !== "doing" && Task2Status !== "done") {
   alert("Invalid status! Please enter todo, doing, or done."); // tell user it's wrong
   Task2Status = prompt("Enter Task 2 status again (todo, doing, done):").toLowerCase(); // ask again
 }
 
 //Put task in a list
 let tasks = [
-  { title: Task1Title, description: Task1Description, status: task1Status },
-  { title: Task2Title, description: Task2Description, status: task2Status }
+  { title: Task1Title, description: Task1Description, status: Task1Status },
+  { title: Task2Title, description: Task2Description, status: Task2Status }
 ];
 
 // check if there are completed tasks
