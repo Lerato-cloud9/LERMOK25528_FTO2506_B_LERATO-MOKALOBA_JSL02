@@ -9,7 +9,7 @@ let Task1Status =prompt("Enter Task 1 status:");
 Task1Status = Task1Status.toLowerCase();
 
 //Validation for status input
-while (Task1Status !== "todo" && Task2Status !== "doing" && Task2Status !== "done") {
+while (Task1Status !== "todo" && Task1Status !== "doing" && Task1Status !== "done") {
   alert("Invalid status! Please enter todo, doing, or done."); // tell user it's wrong
   Task1Status = prompt("Enter Task 1 status again (todo, doing, done):").toLowerCase(); // ask again
 }
