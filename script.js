@@ -44,7 +44,7 @@ let completedTasks = tasks.filter(function(task) {
 if (completedTasks.length > 0) {
   console.log("Completed Tasks:");
   completedTasks.forEach(function(task) {
-    console.log("Title: " + task.title + ", Status: " + task.status);
+  console.log("Title: " + task.title + ", Status: " + task.status);
   });
 } else {
   console.log("No tasks completed, let's get to work!");
