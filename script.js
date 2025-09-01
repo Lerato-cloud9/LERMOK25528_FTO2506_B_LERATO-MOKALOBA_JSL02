@@ -36,9 +36,7 @@ let tasks = [
 
 // check if there are completed tasks
 
-let completedTasks = tasks.filter(function(task) {
-  return task.status === "done";
-});
+const completedTasks = tasks.filter(task => task.status === "done");
 
 // Show results in the console
 if (completedTasks.length > 0) {
