@@ -28,7 +28,7 @@ while (task2Status !== "todo" && task2Status !== "doing" && task2Status !== "don
   task2Status = prompt("Enter Task 2 status again (todo, doing, done):").toLowerCase(); 
 }
 
-//Put task in a list
+//Put task in a Array
 let tasks = [
   { title: task1Title, description: task1Description, status: task1Status },
   { title: task2Title, description: task2Description, status: task2Status }
