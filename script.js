@@ -10,8 +10,8 @@ task1Status = task1Status.toLowerCase();
 
 //Validation for status input
 while (task1Status !== "todo" && task1Status !== "doing" && task1Status !== "done") {
-  alert("Invalid status! Please enter todo, doing, or done."); // tell user it's wrong
-  task1Status = prompt("Enter Task 1 status again (todo, doing, done):").toLowerCase(); // ask again
+  alert("Invalid status! Please enter todo, doing, or done."); 
+  task1Status = prompt("Enter Task 1 status again (todo, doing, done):").toLowerCase(); 
 }
 
 //=======Task 2 ========
@@ -24,8 +24,8 @@ task2Status = task2Status.toLowerCase();
 
 //Validation for status input
 while (task2Status !== "todo" && task2Status !== "doing" && task2Status !== "done") {
-  alert("Invalid status! Please enter todo, doing, or done."); // tell user it's wrong
-  task2Status = prompt("Enter Task 2 status again (todo, doing, done):").toLowerCase(); // ask again
+  alert("Invalid status! Please enter todo, doing, or done."); 
+  task2Status = prompt("Enter Task 2 status again (todo, doing, done):").toLowerCase(); 
 }
 
 //Put task in a list
