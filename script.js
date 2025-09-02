@@ -28,22 +28,18 @@ while (task2Status !== "todo" && task2Status !== "doing" && task2Status !== "don
   task2Status = prompt("Enter Task 2 status again (todo, doing, done):").toLowerCase(); 
 }
 
-//Put task in a Array
-let tasks = [
-  { title: task1Title, description: task1Description, status: task1Status },
-  { title: task2Title, description: task2Description, status: task2Status }
-];
-
-// check if there are completed tasks
-
-const completedTasks = tasks.filter(task => task.status === "done");
-
-// Show results in the console
-if (completedTasks.length > 0) {
+// ===== Show results in console =====
+if (task1Status === "done" || task2Status === "done") {
   console.log("Completed Tasks:");
-  completedTasks.forEach(function(task) {
-  console.log("Title: " + task.title + ", Status: " + task.status);
-  });
+
+  if (task1Status === "done") {
+    console.log("Title: " + task1Title + ", Status: " + task1Status);
+  }
+
+  if (task2Status === "done") {
+    console.log("Title: " + task2Title + ", Status: " + task2Status);
+  }
+
 } else {
   console.log("No tasks completed, let's get to work!");
 }
